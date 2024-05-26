@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelCompleteController">
+   <children>
+      <ImageView fitHeight="153.0" fitWidth="200.0" layoutX="150.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/finish.gif" />
+         </image></ImageView>
+      <ImageView fitHeight="153.0" fitWidth="200.0" layoutX="183.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/levelComplete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="102.0" layoutX="198.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/finish1.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnClose" layoutX="36.0" layoutY="340.0" mnemonicParsing="false" onAction="#processRestart" text="Retry">
+         <font>
+            <Font name="ROGFonts-Regular" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.348993288590604">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6286353467561521">
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9337316527527687">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <Label fx:id="scoreRecord" layoutX="109.0" layoutY="441.0" prefHeight="39.0" prefWidth="133.0" text="Score:">
+         <font>
+            <Font name="Segoe Print Bold" size="19.0" />
+         </font></Label>
+      <Button fx:id="btnClose" layoutX="211.0" layoutY="361.0" mnemonicParsing="false" onAction="#processBacktoHome" prefHeight="80.0" prefWidth="77.0">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="timeRecord" layoutX="303.0" layoutY="441.0" prefHeight="39.0" prefWidth="189.0" text="Time:">
+         <font>
+            <Font name="Segoe Print Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="364.0" layoutY="340.0" mnemonicParsing="false" onAction="#processNext" text="next">
+         <font>
+            <Font name="ROGFonts-Regular" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.348993288590604">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6286353467561521">
+                     <color>
+                        <Color green="1.0" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9337316527527687">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fitHeight="80.0" fitWidth="97.0" layoutX="162.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/thumbuppng.png" />
+         </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="91.0" layoutY="642.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Girls are so fallen into your moustache" wrappingWidth="336.87890625">
+         <font>
+            <Font name="Segoe Print" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
